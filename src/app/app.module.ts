@@ -16,6 +16,8 @@ import { FooterComponent } from './footer/footer.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { TextSentimentComponent } from './text-sentiment/text-sentiment.component';
 import { TextDetectionComponent } from './text-detection/text-detection.component';
+import { CustomersComponent } from './customers/customers.component';
+import { CustomerAccountsComponent } from './customer-accounts/customer-accounts.component';
 
 
 @NgModule({
@@ -26,7 +28,9 @@ import { TextDetectionComponent } from './text-detection/text-detection.componen
     DashboardComponent,
     NotfoundComponent,
     TextSentimentComponent,
-    TextDetectionComponent
+    TextDetectionComponent,
+    CustomersComponent,
+    CustomerAccountsComponent
   ],
   imports: [
     BrowserModule,

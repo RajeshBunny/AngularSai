@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { CustomerAccountsComponent } from './customer-accounts/customer-accounts.component';
+import { CustomersComponent } from './customers/customers.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { loginComponent } from './login/login.component';
 
@@ -15,6 +17,9 @@ const routes: Routes = [
     { path: "textsentiment", component: TextSentimentComponent },
    
     { path: "textdetection", component: TextDetectionComponent },
+      
+  { path: "customers", component: CustomersComponent },
+  { path: "customer-account", component: CustomerAccountsComponent },
 
   ]},
   { path: "", redirectTo: "login", pathMatch: "full" }
