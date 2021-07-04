@@ -1,0 +1,27 @@
+.leftPanelScroll {
+  position: fixed;
+  right: 0;
+  top: 12%;
+  width: 30%;
+  height: 88%;
+  overflow: auto;
+  /* margin-top: 6%; */
+  direction: rtl;
+  box-shadow: 8px 0 8px -8px #888;
+  bottom: 0;
+}
+.list-item {
+  margin-bottom: 30px;
+  padding: 5px;
+}
+.contentPanel {
+  margin-left: 26%;
+}
+.highlight {
+  background: rgb(0, 119, 255);
+  color: white;
+}
+.panel {
+  width: 40%;
+  margin-top: 10%;
+}

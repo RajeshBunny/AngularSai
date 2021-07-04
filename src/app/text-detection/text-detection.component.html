@@ -1,0 +1,39 @@
+<div class="leftPanelScroll">
+    <div class="list-group">
+        <ng-container *ngFor="let list of arrayList; let i = index">
+            <div id="list{{i}}" class="list-item">
+                <h3>{{list.name}}</h3>
+                <p>
+                    <strong>latitude:</strong> {{list.lat}}</p>
+                <p>
+                    <strong>longitude:</strong> {{list.long}}</p>
+            </div>
+        </ng-container>
+    </div>
+</div>
+<div class="panel">
+    <div class="contentPanel">
+        <form>
+            <div class="form-group">
+                <label>latitude: </label>
+                <input class="form-control" placeholder="Enter latitude" type="text" value="" name="lati" [(ngModel)]="lati">
+            </div>
+            <div class="form-group">
+                <label>longitude:</label>
+                <input type="text" class="form-control" placeholder="Enter longitude" value="" name="long" [(ngModel)]="longi">
+            </div>
+            <button type="submit" class="btn btn-primary" (click)="highlightCity()">Search</button>
+        </form>
+    </div>
+</div>
+<!-- <div style="margin-top: 15px;">
+        <button (click)="downloadAll()">Download All</button>
+        <ng-container *ngFor="let ulist of urlList">
+            <li>{{ulist.path}}
+                <a href="{{ulist.path}}" target="_blank">View</a>
+            </li>
+        </ng-container>
+    </div> -->
+
+<app-footer></app-footer>
+<!-- Component directives -->
