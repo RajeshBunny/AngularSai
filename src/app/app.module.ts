@@ -18,7 +18,11 @@ import { TextSentimentComponent } from './text-sentiment/text-sentiment.componen
 import { TextDetectionComponent } from './text-detection/text-detection.component';
 import { CustomersComponent } from './customers/customers.component';
 import { CustomerAccountsComponent } from './customer-accounts/customer-accounts.component';
-
+import {MatTableModule} from '@angular/material/table';
+import {MatSortModule} from '@angular/material/sort';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -42,6 +46,11 @@ import { CustomerAccountsComponent } from './customer-accounts/customer-accounts
     ReactiveFormsModule,
     HttpClientModule,
     NgProgressRouterModule,
+    MatTableModule,
+    MatSortModule,
+    MatPaginatorModule,
+    MatInputModule,
+    MatFormFieldModule
 ],
   bootstrap: [AppComponent]
 })
