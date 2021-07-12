@@ -11,7 +11,6 @@ import { NotfoundComponent } from './notfound/notfound.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SharedModule } from './shared/shared.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { loginComponent } from './login/login.component';
 import { FooterComponent } from './footer/footer.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { TextSentimentComponent } from './text-sentiment/text-sentiment.component';
@@ -23,6 +22,8 @@ import {MatSortModule} from '@angular/material/sort';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { loginComponent } from './login/login.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { MatInputModule } from '@angular/material/input';
     TextSentimentComponent,
     TextDetectionComponent,
     CustomersComponent,
-    CustomerAccountsComponent
+    CustomerAccountsComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

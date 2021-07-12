@@ -5,6 +5,7 @@ import { CustomersComponent } from './customers/customers.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { loginComponent } from './login/login.component';
 
+
 import { NotfoundComponent } from './notfound/notfound.component';
 import { TextDetectionComponent } from './text-detection/text-detection.component';
 import { TextSentimentComponent } from './text-sentiment/text-sentiment.component';
